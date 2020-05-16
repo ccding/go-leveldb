@@ -17,3 +17,4 @@
 archive
 build
 go-leveldb
+coverage.txt

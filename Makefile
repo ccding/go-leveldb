@@ -37,6 +37,7 @@ build/snappy-$(SNAPPY_VERSION)-STAMP: build/snappy-$(SNAPPY_VERSION)
 
 test: goleveldb
 	go test -v ./...
+	go test -race -coverprofile=coverage.txt -covermode=atomic ./...
 
 clean:
 	rm -rf build
